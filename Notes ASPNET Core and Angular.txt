@@ -1,0 +1,76 @@
+2. Building a Walking Skeleton - 17. Adding GIT for source control
+Video: 00:48
+
+for ASPNET Core API - package references
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Design
+
+for EntityFrameworkCore
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+for Angular - package
+npm install bootstrap font-awesome
+
+for Visual Studio Code - Extensions
+C#
+C# Extensions
+NuGet Package Manager
+Angular Snippets
+Angular Files
+Angular Language Service
+Auto Rename Tag
+Bracket Pair Colorizer 2
+Debugger for Chrome
+Material Icon Theme
+Prettier - Code formatter
+TSLint
+angular2-switcher
+
+for DOTNET Core - powershell
+dotnet run
+dotnet watch run
+
+for Angular - powershell
+ng serve
+ng generate component xyz - New Component
+ng add @angular/material - Angular material
+ng add @angular/pwa - Add PWA Support
+ng add ____ - Add Dependency
+ng test - Run and Watch Tests
+ng build --prod - Build for Production
+
+cmd or Command Line for DOTNET
+dotnet --info
+mkdir DatingApp
+dotnet --version
+dotnet -h
+dotnet new -h
+dotnet new -l
+dotnet new webapi -h
+dotnet new webapi -n DatingApp.API
+
+cmd or Command Line for Angular
+npm install -g @angular/cli
+ng new DatingApp-SPA
+
+Install for Computer
+Node
+Git
+Postman
+Visual Studio Code
+Sql Server Management Studio(SSM)
+Sql Server
+
+Connection String for SqlServer
+Trusted Connection
+Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;
+
+Using a non-standard port for SqlServer
+Server=.\\SQLEXPRESS,1433;Database=DatingApp.db;User Id=datingappapi;Password=free232469;
+
+Why powershell does not run Angular commands?
+Remove ng.ps1 from the directory C:\Users\%username%\AppData\Roaming\npm\ 
+then try clearing the npm cache at C:\Users\%username%\AppData\Roaming\npm-cache\
