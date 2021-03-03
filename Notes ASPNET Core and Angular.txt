@@ -1,5 +1,5 @@
-3. Security - 15. Safe storage of secrets
-Video: 02:09
+4. Client side login and register - 10. Adding the register method to the Auth Service
+Video: 
 
 for ASPNET Core API - package references
 Microsoft.EntityFrameworkCore
@@ -87,3 +87,21 @@ Server=.\\SQLEXPRESS,1433;Database=DatingApp.db;User Id=datingappapi;Password=fr
 Why powershell does not run Angular commands?
 Remove ng.ps1 from the directory C:\Users\%username%\AppData\Roaming\npm\ 
 then try clearing the npm cache at C:\Users\%username%\AppData\Roaming\npm-cache\
+
+<pre>
+  Form Valid: {{loginForm.valid}}
+  Form Touched: {{loginForm.touched}}
+  Form Dirty: {{loginForm.dirty}}
+  Form Values: {{loginForm.value | json}}
+  Username Valid: {{username.valid}}
+  Username Touched: {{username.touched}}
+  Username Dirty: {{username.dirty}}
+  Username Value: {{username.value}}
+  Password Valid: {{password.valid}}
+  Password Touched: {{password.touched}}
+  Password Dirty: {{password.dirty}}
+  Password Value: {{password.value}}
+</pre>
+
+Angular - Parent to Child Component ---> @Input() valuesFromHome: any;
+Angular - Child to Parent Component ---> @Output() cancelRegister = new EventEmitter();
