@@ -1,5 +1,5 @@
-2. Building a Walking Skeleton - 17. Adding GIT for source control
-Video: 00:48
+3. Security - 15. Safe storage of secrets
+Video: 02:09
 
 for ASPNET Core API - package references
 Microsoft.EntityFrameworkCore
@@ -32,6 +32,9 @@ angular2-switcher
 for DOTNET Core - powershell
 dotnet run
 dotnet watch run
+dotnet user-secrets
+dotnet user-secrets set "AppSettings:Token" "super secret key"
+dotnet user-secrets list
 
 for Angular - powershell
 ng serve
@@ -63,6 +66,16 @@ Postman
 Visual Studio Code
 Sql Server Management Studio(SSM)
 Sql Server
+
+.gitignore for ASPNET Core API
+.vscode
+bin
+obj
+*.db
+appsettings.json
+
+If Intellisense not work
+click Shift + Ctrl + P, then search OmniSharp, then restart OmniSharp
 
 Connection String for SqlServer
 Trusted Connection
