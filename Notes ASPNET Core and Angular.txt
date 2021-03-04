@@ -1,4 +1,4 @@
-4. Client side login and register - 10. Adding the register method to the Auth Service
+5. Error Handling - 4. Handling errors in Angular
 Video: 
 
 for ASPNET Core API - package references
