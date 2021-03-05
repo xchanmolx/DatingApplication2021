@@ -1,8 +1,8 @@
 import { catchError, retry } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
-import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { HttpErrorResponse, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-export class ErrorIntercept implements HttpInterceptor {
+export class ErrorInterceptor implements HttpInterceptor {
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         return next.handle(req)
             .pipe(
@@ -11,7 +11,7 @@ export class ErrorIntercept implements HttpInterceptor {
                     let modalStateErrors = '';
                     const serverError = error.error;
                     if (error.status === 401) {
-                        return throwError(error.statusText)
+                        return throwError(error.statusText);
                     }
                     if (error.error instanceof ErrorEvent) {
                         // client-side error
@@ -34,3 +34,9 @@ export class ErrorIntercept implements HttpInterceptor {
             );
     }
 }
+
+export const ErrorInterceptorProvider = {
+    provide: HTTP_INTERCEPTORS,
+    useClass: ErrorInterceptor,
+    multi: true
+};
