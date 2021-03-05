@@ -1,4 +1,4 @@
-6. Adding 3rd party components to our app - 6. Bringing some color to our app with a theme from Bootswatch
+7. Routing in Angular - 6. Protecting multiple routes with a single route guard using dummy routes
 Video: 
 
 for ASPNET Core API - package references
@@ -48,6 +48,7 @@ ng add @angular/pwa - Add PWA Support
 ng add ____ - Add Dependency
 ng test - Run and Watch Tests
 ng build --prod - Build for Production
+ng g guard auth --skipTests
 
 cmd or Command Line for DOTNET
 dotnet --info
