@@ -1,15 +1,20 @@
-7. Routing in Angular - 6. Protecting multiple routes with a single route guard using dummy routes
+9. Building a great looking User Interface - 1. Introduction
 Video: 
 
 for ASPNET Core API - package references
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Design
+Newtonsoft.Json
+Microsoft.AspNetCore.Mvc.NewtonsoftJson
+AutoMapper
+AutoMapper.Extensions.Microsoft.DependencyInjection
 
 for EntityFrameworkCore
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+dotnet ef database drop
 
 for Angular - package
 npm install bootstrap font-awesome
