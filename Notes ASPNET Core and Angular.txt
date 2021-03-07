@@ -1,4 +1,4 @@
-9. Building a great looking User Interface - 1. Introduction
+9. Building a great looking User Interface - 3. Adding Interfaces to our Typescript code
 Video: 
 
 for ASPNET Core API - package references
@@ -84,7 +84,7 @@ obj
 *.db
 appsettings.json
 
-If Intellisense not work
+If Intellisense not work for DOTNET
 click Shift + Ctrl + P, then search OmniSharp, then restart OmniSharp
 
 Connection String for SqlServer
