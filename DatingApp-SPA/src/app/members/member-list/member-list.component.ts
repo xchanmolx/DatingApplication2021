@@ -16,6 +16,7 @@ export class MemberListComponent implements OnInit {
               private route: ActivatedRoute ) { }
 
   ngOnInit() {
+    // tslint:disable-next-line: deprecation
     this.route.data.subscribe(data => {
       this.users = data.users;
     });

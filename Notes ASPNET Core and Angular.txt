@@ -1,5 +1,5 @@
-9. Building a great looking User Interface - 3. Adding Interfaces to our Typescript code
-Video: 
+10. Updating Resources - 3. Designing the template for the member profile edit page - part 1
+Video: 4:23
 
 for ASPNET Core API - package references
 Microsoft.EntityFrameworkCore

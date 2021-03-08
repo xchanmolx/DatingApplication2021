@@ -1,5 +1,8 @@
 <div class="container mt-4">
   <div class="row">
+    <h1>{{user.knownAs}}'s Profile</h1>
+  </div>
+  <div class="row">
     <div class="col-sm-4">
       <div class="card">
         <img class="card-img-top img-thumbnail" src="{{user.photoUrl}}" alt="{{user.knownAs}}">
@@ -44,8 +47,8 @@
           </tab>
           <tab heading="Photos">
             <carousel>
-              <slide *ngFor="let photo of user.photos">
-                <img src="{{photo.url}}" alt="{{user.knownAs}}" style="display: block; width: 50%;">
+              <slide *ngFor="let photo of user.photos" class="text-center">
+                <img src="{{photo.url}}" alt="{{user.knownAs}}" style="width: 50%;">
               </slide>
             </carousel>
           </tab>
