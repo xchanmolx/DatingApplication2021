@@ -47,7 +47,7 @@
           </tab>
           <tab heading="Photos">
             <carousel>
-              <slide *ngFor="let photo of user.photos" class="text-center">
+              <slide *ngFor="let photo of user.photos" class="text-center bg-primary">
                 <img src="{{photo.url}}" alt="{{user.knownAs}}" style="width: 50%;">
               </slide>
             </carousel>

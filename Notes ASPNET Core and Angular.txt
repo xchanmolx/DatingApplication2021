@@ -1,7 +1,7 @@
-10. Updating Resources - 3. Designing the template for the member profile edit page - part 1
-Video: 4:23
+11. Adding Photo upload functionality to the application - 9. Configuring the 3rd Party file uploader
+Video: 03:48
 
-for ASPNET Core API - package references
+for ASPNET Core API - package references - NuGet Package Manager
 Microsoft.EntityFrameworkCore
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Design
@@ -9,6 +9,7 @@ Newtonsoft.Json
 Microsoft.AspNetCore.Mvc.NewtonsoftJson
 AutoMapper
 AutoMapper.Extensions.Microsoft.DependencyInjection
+CloudinaryDotNet
 
 for EntityFrameworkCore
 dotnet tool install --global dotnet-ef
@@ -22,6 +23,7 @@ npm install alertifyjs
 npm install @auth0/angular-jwt
 npm install ngx-bootstrap --save
 npm install bootswatch
+npm i ng2-file-upload --save
 
 for Visual Studio Code - Extensions
 C#

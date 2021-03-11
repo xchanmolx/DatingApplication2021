@@ -65,3 +65,4 @@ E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0
 E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0\AutoMapper.dll
 E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0\CloudinaryDotNet.dll

@@ -10,14 +10,18 @@ import { AuthService } from '../_services/auth.service';
 })
 export class NavComponent implements OnInit {
   model: any = {};
+  photoUrl!: string;
 
   constructor(public authService: AuthService, private alertify: AlertifyService,
               private router: Router) { }
 
   ngOnInit() {
+    // tslint:disable-next-line: deprecation
+    this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
   }
 
   login() {
+    // tslint:disable-next-line: deprecation
     this.authService.login(this.model).subscribe(next => {
       this.alertify.success('Logged in successfully');
     }, error => {
@@ -33,6 +37,10 @@ export class NavComponent implements OnInit {
 
   logout() {
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    this.authService.decodedToken = null;
+    // tslint:disable-next-line: no-non-null-assertion
+    this.authService.currentUser = null!;
     this.alertify.message('Logged out');
     this.router.navigate(['/home']);
   }
