@@ -1,5 +1,5 @@
-11. Adding Photo upload functionality to the application - 9. Configuring the 3rd Party file uploader
-Video: 03:48
+12. Reactive Forms in Angular - 2. Introduction to Reactive Forms in Angular
+Video: 
 
 for ASPNET Core API - package references - NuGet Package Manager
 Microsoft.EntityFrameworkCore
