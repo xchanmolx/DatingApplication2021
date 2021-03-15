@@ -1,5 +1,5 @@
-13. Action Filters in ASP.NET Core - 2. Using a TimeAgo pipe for dates in Angular
-Video: 3:28
+14. Paging, Sorting and Filtering - 6. Setting up pagination in the SPA
+Video: 
 
 for ASPNET Core API - package references - NuGet Package Manager
 Microsoft.EntityFrameworkCore
