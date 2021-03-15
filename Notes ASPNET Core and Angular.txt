@@ -1,4 +1,4 @@
-14. Paging, Sorting and Filtering - 6. Setting up pagination in the SPA
+15. Adding the 'Likes' functionality from start to finish - 1. Introduction
 Video: 
 
 for ASPNET Core API - package references - NuGet Package Manager
