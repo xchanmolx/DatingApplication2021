@@ -1,4 +1,4 @@
-import { NgModule, Pipe } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, Pipe } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -13,6 +13,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 import { TimeAgoPipe } from 'time-ago-pipe';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -36,6 +37,8 @@ import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { ListsResolver } from './_resolvers/lists.resolver';
+import { MessagesResolver } from './_resolvers/messages.resolver';
+import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -61,7 +64,8 @@ export class TimeAgoExtendsPipe extends TimeAgoPipe {}
       MemberDetailComponent,
       MemberEditComponent,
       PhotoEditorComponent,
-      TimeAgoExtendsPipe
+      TimeAgoExtendsPipe,
+      MemberMessagesComponent
    ],
   imports: [
     BrowserModule,
@@ -70,6 +74,7 @@ export class TimeAgoExtendsPipe extends TimeAgoPipe {}
     ReactiveFormsModule,
     BrowserAnimationsModule,
     FileUploadModule,
+    NgxSpinnerModule,
     ButtonsModule.forRoot(),
     PaginationModule.forRoot(),
     BsDatepickerModule.forRoot(),
@@ -95,8 +100,10 @@ export class TimeAgoExtendsPipe extends TimeAgoPipe {}
     MemberDetailResolver,
     MemberListResolver,
     MemberEditResolver,
-    ListsResolver
+    ListsResolver,
+    MessagesResolver
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

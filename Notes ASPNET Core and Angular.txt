@@ -1,5 +1,5 @@
-15. Adding the 'Likes' functionality from start to finish - 1. Introduction
-Video: 
+16. Add a private messaging system to the application - 15. Adding the Delete message functionality to the API
+Video: 00:37
 
 for ASPNET Core API - package references - NuGet Package Manager
 Microsoft.EntityFrameworkCore
@@ -26,6 +26,7 @@ npm install ngx-bootstrap --save
 npm install bootswatch
 npm i ng2-file-upload --save
 npm install time-ago-pipe --save
+npm install ngx-spinner --save
 
 for Visual Studio Code - Extensions
 C#

@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { ThrowStmt } from '@angular/compiler';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TabsetComponent } from 'ngx-bootstrap/tabs';
 import { User } from 'src/app/_models/user';
 import { AlertifyService } from 'src/app/_services/alertify.service';
 import { UserService } from 'src/app/_services/user.service';
@@ -10,6 +12,7 @@ import { UserService } from 'src/app/_services/user.service';
   styleUrls: ['./member-detail.component.css']
 })
 export class MemberDetailComponent implements OnInit {
+  @ViewChild('memberTabs', { static: true }) memberTabs!: TabsetComponent;
   user!: User;
 
   constructor(private userService: UserService, private alertify: AlertifyService,
@@ -20,14 +23,17 @@ export class MemberDetailComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.user = data.user;
     });
+
+    // tslint:disable-next-line: deprecation
+    this.route.queryParams.subscribe(params => {
+      const selectedTab = params.tab;
+      // tslint:disable-next-line: no-unused-expression
+      this.memberTabs.tabs[selectedTab > 0 ? selectedTab : 0].active = true;
+    });
   }
 
-  // loadUser() {
-  //   this.userService.getUser(+this.route.snapshot.params.id).subscribe((user: User) => {
-  //     this.user = user;
-  //   }, error => {
-  //     this.alertify.error(error);
-  //   });
-  // }
+  selectTab(tabId: number) {
+    this.memberTabs.tabs[tabId].active = true;
+  }
 
 }

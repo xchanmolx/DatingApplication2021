@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { PaginatedResult, Pagination } from 'src/app/_models/pagination';
 import { User } from '../../_models/user';
 import { AlertifyService } from '../../_services/alertify.service';
@@ -18,13 +19,15 @@ export class MemberListComponent implements OnInit {
   pagination!: Pagination;
 
   constructor(private userService: UserService, private alertify: AlertifyService,
-              private route: ActivatedRoute ) { }
+              private route: ActivatedRoute, private spinner: NgxSpinnerService) { }
 
   ngOnInit() {
+    this.spinner.show();
     // tslint:disable-next-line: deprecation
     this.route.data.subscribe(data => {
       this.users = data.users.result;
       this.pagination = data.users.pagination;
+      this.spinner.hide();
     });
 
     this.userParams.gender = this.user.gender === 'male' ? 'female' : 'male';
@@ -46,11 +49,13 @@ export class MemberListComponent implements OnInit {
   }
 
   loadUsers() {
+    this.spinner.show();
     this.userService.getUsers(this.pagination.currentPage, this.pagination.itemsPerPage, this.userParams)
       // tslint:disable-next-line: deprecation
       .subscribe((res: PaginatedResult<User[]>) => {
       this.users = res.result;
       this.pagination = res.pagination;
+      this.spinner.hide();
     }, error => {
       this.alertify.error(error);
     });

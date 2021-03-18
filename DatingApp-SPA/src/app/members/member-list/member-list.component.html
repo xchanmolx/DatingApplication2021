@@ -41,6 +41,10 @@
   </form>
   <br>
 
+  <ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" 
+    type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Loading... 
+    </p></ngx-spinner>
+
   <div class="row">
     <div *ngFor="let user of users" class="col-lg-2 col-md-3 col-sm-6">
       <app-member-card [user]="user"></app-member-card>

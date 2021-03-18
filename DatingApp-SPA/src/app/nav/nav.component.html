@@ -17,7 +17,7 @@
       <div class="ml-auto">
         <div *ngIf="loggedIn()" class="dropdown" dropdown>
           <span class="mr-1">
-            <img src="{{photoUrl || '../../../../../assets/user.png'}}" alt="{{authService.currentUser.knownAs}}">
+            <img src="{{photoUrl || '../../../../../assets/user.png'}}" alt="{{authService.currentUser.knownAs}}" class="rounded-circle">
           </span>
           <a class="dropdown-toggle text-light" dropdownToggle>
             Welcome {{authService.decodedToken?.unique_name | titlecase}}
