@@ -1,5 +1,5 @@
-16. Add a private messaging system to the application - 15. Adding the Delete message functionality to the API
-Video: 00:37
+17. Publishing (new) - 1. Introduction
+Video: 
 
 for ASPNET Core API - package references - NuGet Package Manager
 Microsoft.EntityFrameworkCore
@@ -10,6 +10,7 @@ Microsoft.AspNetCore.Mvc.NewtonsoftJson
 AutoMapper
 AutoMapper.Extensions.Microsoft.DependencyInjection
 CloudinaryDotNet
+Microsoft.EntityFrameworkCore.Proxies
 GetService - using Microsoft.Extensions.DependencyInjection;
 
 for EntityFrameworkCore
@@ -49,6 +50,9 @@ dotnet watch run
 dotnet user-secrets
 dotnet user-secrets set "AppSettings:Token" "super secret key"
 dotnet user-secrets list
+--------------------------------------------
+for Publishing the DOTNET Core
+
 
 for Angular - powershell
 ng serve
@@ -59,6 +63,11 @@ ng add ____ - Add Dependency
 ng test - Run and Watch Tests
 ng build --prod - Build for Production
 ng g guard auth --skipTests
+--------------------------------------------
+for Publishing the Angular
+"outputPath": "../DatingApp.API/wwwroot"
+ng build
+ng build --prod
 
 cmd or Command Line for DOTNET
 dotnet --info
