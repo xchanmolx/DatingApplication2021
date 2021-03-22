@@ -1,4 +1,4 @@
-17. Publishing (new) - 1. Introduction
+17. Publishing (new) - 8. Publishing to IIS
 Video: 
 
 for ASPNET Core API - package references - NuGet Package Manager
@@ -52,7 +52,7 @@ dotnet user-secrets set "AppSettings:Token" "super secret key"
 dotnet user-secrets list
 --------------------------------------------
 for Publishing the DOTNET Core
-
+dotnet publish --configuration Release
 
 for Angular - powershell
 ng serve
