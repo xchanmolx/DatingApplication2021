@@ -54,6 +54,7 @@ dotnet user-secrets list
 --------------------------------------------
 for Publishing the DOTNET Core
 dotnet publish --configuration Release
+dotnet publish -c Release
 
 for Angular - powershell
 ng serve
@@ -66,7 +67,7 @@ ng build --prod - Build for Production
 ng g guard auth --skipTests
 --------------------------------------------
 for Publishing the Angular
-"outputPath": "../DatingApp.API/wwwroot"
+angular.json ---> "outputPath": "../DatingApp.API/wwwroot"
 ng build
 ng build --prod
 
@@ -98,6 +99,7 @@ bin
 obj
 *.db
 appsettings.json
+wwwroot
 
 Clone the repository you need then,
 locate the folder for API, then run 'dotnet restore'
