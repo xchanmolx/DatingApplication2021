@@ -16,5 +16,6 @@
     <PackageReference Include="AutoMapper" Version="10.1.1"/>
     <PackageReference Include="CloudinaryDotNet" Version="1.15.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0"/>
   </ItemGroup>
 </Project>

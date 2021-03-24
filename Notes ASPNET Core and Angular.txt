@@ -1,4 +1,4 @@
-17. Publishing (new) - 8. Publishing to IIS
+Finished - Finished
 Video: 
 
 for ASPNET Core API - package references - NuGet Package Manager
@@ -11,6 +11,7 @@ AutoMapper
 AutoMapper.Extensions.Microsoft.DependencyInjection
 CloudinaryDotNet
 Microsoft.EntityFrameworkCore.Proxies
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
 GetService - using Microsoft.Extensions.DependencyInjection;
 
 for EntityFrameworkCore
@@ -97,6 +98,10 @@ bin
 obj
 *.db
 appsettings.json
+
+Clone the repository you need then,
+locate the folder for API, then run 'dotnet restore'
+locate the folder for SPA, then run 'npm install'
 
 If Intellisense not work for DOTNET
 click Shift + Ctrl + P, then search OmniSharp, then restart OmniSharp

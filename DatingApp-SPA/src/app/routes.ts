@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { HomeComponent } from './home/home.component';
 import { ListsComponent } from './lists/lists.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
@@ -31,7 +32,8 @@ export const appRoutes: Routes = [
             { path: 'lists', component: ListsComponent,
                 resolve: {users: ListsResolver} },
             { path: 'messages', component: MessagesComponent,
-                resolve: {messages: MessagesResolver} }
+                resolve: {messages: MessagesResolver} },
+            { path: 'admin', component: AdminPanelComponent, data: {roles: ['Admin', 'Moderator']} }
         ]
     },
     { path: '**', redirectTo: 'home', pathMatch: 'full' }

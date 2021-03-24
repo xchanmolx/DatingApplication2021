@@ -68,3 +68,4 @@ E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\obj\Debug\net5.0
 E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\obj\Debug\net5.0\DatingApp.API.genruntimeconfig.cache
 E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0\Castle.Core.dll
 E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+E:\xchanmolxFiles\aspnetcoreapi-angular\DatingApp\DatingApp.API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
