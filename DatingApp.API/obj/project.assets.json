@@ -7956,11 +7956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\xchanmolxFiles\\aspnetcoreapi-angular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
+      "projectUniqueName": "E:\\xchanmolxFiles\\aspnetcoreapi-angular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
       "projectName": "DatingApp.API",
-      "projectPath": "e:\\xchanmolxFiles\\aspnetcoreapi-angular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
+      "projectPath": "E:\\xchanmolxFiles\\aspnetcoreapi-angular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
       "packagesPath": "C:\\Users\\ABTIK\\.nuget\\packages\\",
-      "outputPath": "e:\\xchanmolxFiles\\aspnetcoreapi-angular\\DatingApp\\DatingApp.API\\obj\\",
+      "outputPath": "E:\\xchanmolxFiles\\aspnetcoreapi-angular\\DatingApp\\DatingApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
