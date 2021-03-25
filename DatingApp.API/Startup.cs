@@ -177,18 +177,18 @@ namespace DatingApp.API
                 });
             }
 
-            app.UseDefaultFiles();
+            app.UseStatusCodePagesWithReExecute("/errors/{0}");
 
+            app.UseDefaultFiles();
             app.UseStaticFiles();
 
-            // app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseCors("AllowOrigin");
 
             app.UseAuthentication();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
